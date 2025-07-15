@@ -1,0 +1,124 @@
+.app {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #1890ff, #722ed1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.input-section {
+  margin-bottom: 24px;
+}
+
+.statistics-section {
+  margin-bottom: 24px;
+}
+
+.actions-section {
+  margin-bottom: 24px;
+  padding: 16px 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tree-section {
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 80px 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.diff-tree .tree-node-content {
+  padding: 8px 0;
+}
+
+.diff-tree .node-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.diff-tree .node-title {
+  font-weight: 500;
+}
+
+.diff-tree .node-title.added {
+  background-color: #f6ffed;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.diff-tree .node-title.removed {
+  background-color: #fff2f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.diff-tree .node-title.modified {
+  background-color: #e6f7ff;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.diff-tree .node-path {
+  font-family: Monaco, Menlo, 'Ubuntu Mono', monospace;
+  color: #666;
+  font-size: 11px;
+}
+
+.diff-tree .node-changes {
+  cursor: pointer;
+}
+
+/* Ant Design Tree 样式自定义 */
+.ant-tree .ant-tree-node-content-wrapper {
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.ant-tree .ant-tree-node-content-wrapper:hover {
+  background-color: #f5f5f5;
+}
+
+.ant-tree .ant-tree-node-content-wrapper.ant-tree-node-selected {
+  background-color: #e6f7ff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .app-content {
+    padding: 12px;
+  }
+
+  .input-section .ant-col {
+    margin-bottom: 16px;
+  }
+
+  .actions-section .ant-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
